@@ -8,48 +8,110 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Navbar -->
     <nav class="navbar">
         <div class="logo">
-            <img src="./Asset/bg.JPG" alt="Logo" />
+            <img src="./Asset/logo.png" alt="Logo Hidup Sehat" />
         </div>
         <button class="hamburger" id="hamburger">
             ☰
         </button>
         <ul class="menu" id="menu">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#home">Beranda</a></li>
+            <li><a href="#about">Konsultasi</a></li>
+            <li><a href="#services">Tips</a></li>
+            <li><a href="#contact">Kontak</a></li>
         </ul>
     </nav>
+
+    <!-- Main Hero Section -->
     <main class="main-hero">
         <div>
-             <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>   
+            <h1>Jaga <span class="span1">Kesehatanmu</span> untuk Masa Depan yang <span class="span2">Lebih Baik</span></h1>
         </div>
         <div>
-            <img src="./Asset/bg.JPG" alt="">    
+            <img src="./Asset/img-hero.png" alt="Gambar Hidup Sehat">
         </div>
     </main>
+
+    <!-- Main Content -->
     <main class="main-container">
-        <!-- Content Section -->
+        <!-- Article Content -->
         <article class="content-container">
             <div class="content-display">
-                <p class="content-text active">This is the content for Tab 1.</p>
-                <p class="content-text">This is the content for Tab 2.</p>
-                <p class="content-text">This is the content for Tab 3.</p>
+                <div class="content-text active">
+                    <h2>Pola Makan Sehat: Nutrisi untuk Tubuh</h2>
+                    <p>Pola makan sehat adalah fondasi dari tubuh yang sehat. Dengan mengonsumsi makanan yang bergizi, kita memberikan tubuh energi yang dibutuhkan untuk beraktivitas sehari-hari, serta memperkuat sistem kekebalan tubuh.</p>
+                    <h3>Tips Pola Makan Sehat</h3>
+                    <ul>
+                        <li>Variasi makanan: Konsumsi berbagai macam makanan dari semua kelompok makanan, seperti buah-buahan, sayuran, biji-bijian, protein, dan susu.</li>
+                        <li>Porsi yang tepat: Perhatikan porsi makan agar tidak berlebihan.</li>
+                        <li>Batasi makanan olahan: Kurangi konsumsi makanan olahan yang tinggi gula, garam, dan lemak jenuh.</li>
+                        <li>Minum air putih yang cukup: Air sangat penting untuk menjaga tubuh tetap terhidrasi.</li>
+                        <li>Makan teratur: Jangan lewatkan waktu makan dan usahakan makan dalam porsi kecil namun sering.</li>
+                    </ul>
+                </div>
+                <div class="content-text">
+                    <h2>Olahraga Teratur: Gerak untuk Kesehatan</h2>
+                    <p>Olahraga tidak hanya bermanfaat untuk menjaga berat badan ideal, tetapi juga meningkatkan kesehatan jantung, paru-paru, dan otot. Selain itu, olahraga juga dapat meningkatkan mood dan mengurangi stres.</p>
+                    <h3>Tips Olahraga Teratur</h3>
+                    <ul>
+                        <li>Cari jenis olahraga yang disukai: Pilih olahraga yang menyenangkan agar Anda lebih termotivasi untuk melakukannya secara rutin.</li>
+                        <li>Buat jadwal olahraga: Tetapkan waktu khusus untuk berolahraga dan usahakan konsisten.</li>
+                        <li>Konsultasikan dengan dokter: Sebelum memulai program olahraga baru, sebaiknya konsultasikan dengan dokter terlebih dahulu, terutama jika Anda memiliki kondisi kesehatan tertentu.</li>
+                        <li>Kombinasikan berbagai jenis olahraga: Variasikan jenis olahraga yang Anda lakukan agar tubuh tidak mudah bosan dan mendapatkan manfaat yang lebih maksimal.</li>
+                    </ul>
+                </div>
+                <div class="content-text">
+                    <h2>Istirahat yang Cukup: Untuk Memulihkan Diri</h2>
+                    <p>Istirahat yang cukup sangat penting untuk menjaga kesehatan tubuh dan mental. Selama tidur, tubuh melakukan proses perbaikan dan regenerasi sel.</p>
+                    <h3>Tips Mendapatkan Istirahat yang Cukup:</h3>
+                    <ul>
+                        <li>Tidur 7-9 jam setiap malam: Usahakan tidur pada waktu yang sama setiap hari untuk mengatur jam biologis tubuh.</li>
+                        <li>Buat suasana tidur yang nyaman: Pastikan kamar tidur Anda gelap, tenang, dan memiliki suhu yang nyaman.</li>
+                        <li>Hindari kafein dan alkohol sebelum tidur: Kafein dan alkohol dapat mengganggu kualitas tidur.</li>
+                        <li>Batasi penggunaan gadget sebelum tidur: Cahaya biru dari gadget dapat menghambat produksi melatonin, hormon yang mengatur siklus tidur.</li>
+                    </ul>
+                </div>
             </div>
         </article>
-
+    
+        <!-- Aside Content -->
         <aside class="aside-container">
-            <img src="./Asset/bg.JPG" alt="">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates eius beatae ratione explicabo at aperiam dolore quae eos consequuntur soluta.</p>
+            <img src="./Asset/dokter.png" alt="Dokter">
+            <p>Hidup sehat dimulai dari langkah kecil. Kenali tubuh Anda, konsumsi makanan bergizi, dan perhatikan keseimbangan aktivitas fisik Anda. Ikuti saran dari dokter kami untuk hidup lebih baik setiap hari.</p>
             <div class="tabs">
-                <button class="tab-button active" onclick="showContent(0)">Tab 1</button>
-                <button class="tab-button" onclick="showContent(1)">Tab 2</button>
-                <button class="tab-button" onclick="showContent(2)">Tab 3</button>
+                <button class="tab-button active" onclick="showContent(0)">Pola Makan Sehat</button>
+                <button class="tab-button" onclick="showContent(1)">Olahraga Teratur</button>
+                <button class="tab-button" onclick="showContent(2)">Istirahat Cukup</button>
             </div>
         </aside>
     </main>
+    
+
+    <!-- Article Section -->
+    <article class="article-content">
+        <h1>Ayo Mulai <span>Hidup Sehat</span>  Hari Ini!</h1>
+        <p>Hidup sehat bukan hanya tentang bagaimana Anda terlihat, tetapi juga bagaimana tubuh Anda merasa. Dengan mengonsumsi makanan sehat, berolahraga secara teratur, dan menjaga pola tidur yang baik, Anda dapat meningkatkan kualitas hidup Anda. Jangan tunda lagi, mulailah langkah kecil untuk hidup yang lebih sehat sekarang juga!</p>
+    </article>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-menu-wrapper">
+                <ul class="footer-menu" id="menu">
+                    <li><a href="#home">Beranda</a></li>
+                    <li><a href="#about">Konsultasi</a></li>
+                    <li><a href="#services">Tips</a></li>
+                    <li><a href="#contact">Kontak</a></li>
+                </ul>
+            </div>
+            <div class="footer-text">
+                &copy; 2025 Tugas Akhir - Belajar Dasar Pemrograman Web. Fathurahman
+            </div>
+        </div>
+    </footer>
+          
     <script src="script.js"></script>
 </body>
 </html>
