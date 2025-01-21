@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Navbar -->
     <nav class="navbar">
         <div class="logo">
             <img src="./Asset/logo.png" alt="Logo Hidup Sehat" />
@@ -17,15 +16,14 @@
             ☰
         </button>
         <ul class="menu" id="menu">
-            <li><a href="#home">Beranda</a></li>
-            <li><a href="#about">Konsultasi</a></li>
-            <li><a href="#services">Tips</a></li>
-            <li><a href="#contact">Kontak</a></li>
+            <li><a href="#beranda">Beranda</a></li>
+            <li><a href="#konsultasi">Konsultasi</a></li>
+            <li><a href="#tips">Tips</a></li>
+            <li><a href="#kontak">Kontak</a></li>
         </ul>
     </nav>
 
-    <!-- Main Hero Section -->
-    <main class="main-hero">
+    <main class="main-hero" id="beranda">
         <div>
             <h1>Jaga <span class="span1">Kesehatanmu</span> untuk Masa Depan yang <span class="span2">Lebih Baik</span></h1>
         </div>
@@ -34,9 +32,7 @@
         </div>
     </main>
 
-    <!-- Main Content -->
-    <main class="main-container">
-        <!-- Article Content -->
+    <main class="main-container" id="konsultasi" id="tips">
         <article class="content-container">
             <div class="content-display">
                 <div class="content-text active">
@@ -76,7 +72,7 @@
             </div>
         </article>
     
-        <!-- Aside Content -->
+
         <aside class="aside-container">
             <img src="./Asset/dokter.png" alt="Dokter">
             <p>Hidup sehat dimulai dari langkah kecil. Kenali tubuh Anda, konsumsi makanan bergizi, dan perhatikan keseimbangan aktivitas fisik Anda. Ikuti saran dari dokter kami untuk hidup lebih baik setiap hari.</p>
@@ -89,29 +85,25 @@
     </main>
     
 
-    <!-- Article Section -->
     <article class="article-content">
-        <h1>Ayo Mulai <span>Hidup Sehat</span>  Hari Ini!</h1>
-        <p>Hidup sehat bukan hanya tentang bagaimana Anda terlihat, tetapi juga bagaimana tubuh Anda merasa. Dengan mengonsumsi makanan sehat, berolahraga secara teratur, dan menjaga pola tidur yang baik, Anda dapat meningkatkan kualitas hidup Anda. Jangan tunda lagi, mulailah langkah kecil untuk hidup yang lebih sehat sekarang juga!</p>
+        <h1>Ayo Mulai <span class="content1">Hidup Sehat</span> dengan Langkah Kecil yang Bermakna, Mulailah <span class="content2">dari Sekarang!!</span></h1>
     </article>
 
-    <!-- Footer -->
-    <footer class="footer">
+    <footer class="footer" id="kontak">
         <div class="footer-container">
             <div class="footer-menu-wrapper">
                 <ul class="footer-menu" id="menu">
-                    <li><a href="#home">Beranda</a></li>
-                    <li><a href="#about">Konsultasi</a></li>
-                    <li><a href="#services">Tips</a></li>
-                    <li><a href="#contact">Kontak</a></li>
+                    <li><a href="#beranda">Beranda</a></li>
+                    <li><a href="#konsultasi">Konsultasi</a></li>
+                    <li><a href="#tips">Tips</a></li>
+                    <li><a href="#kontak">Kontak</a></li>
                 </ul>
             </div>
             <div class="footer-text">
                 &copy; 2025 Tugas Akhir - Belajar Dasar Pemrograman Web. Fathurahman
             </div>
         </div>
-    </footer>
-          
+    </footer>   
     <script src="script.js"></script>
 </body>
 </html>
